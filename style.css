@@ -28,7 +28,7 @@ body {
 }
 .nav a:hover {
   color: white;
-  border-bottom: 3px solid green;
+  border-bottom: 3px solid #297ae3;
   transition-duration: 0.5s;
 }
 .banner {
