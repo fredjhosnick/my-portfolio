@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #15171c;
+  margin: 3rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-end;
+  margin: 3.5rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+.nav a {
+  color: gray;
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  margin: 3rem 1rem;
+}
+.nav a:hover {
+  color: white;
+  border-bottom: 3px solid green;
+  transition-duration: 0.5s;
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+}
+.titleBanner {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  width: 50%;
+}
+
+.titleBanner h1,
+h2 {
+  color: white;
+  font-size: 6rem;
+}
+.titleBanner p {
+  font-size: 2rem;
+  color: white;
+  text-align: justify;
+}
+
+.foto {
+  background-image: url(img/photo_2023-09-12_12-03-36.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1rem solid #297ae3;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 7rem;
+}
+.foto:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  margin: 3.5rem;
+  width: 100%;
+  height: 100vh;
+}
+.aboutme h1 {
+  color: white;
+  font-size: 4rem;
+  margin-top: 4rem;
+}
+
+.aboutme p {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+.myFoto {
+  background-image: url(img/photo_2023-09-12_12-03-36.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 1rem solid white;
+  width: 300px;
+  height: 500px;
+  margin: 2rem auto;
+}
+section {
+  display: block;
+}
+#full-service {
+  display: block;
+  height: 100vh;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+section .title-service {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 40px;
+}
+.items-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-color: #232933;
+  width: 300px;
+  border-radius: 20%;
+  margin: 1rem;
+}
+.items-service h2 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+.items-service p {
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+}
+.items-service button {
+  background: #297ae3;
+  border: none;
+  margin: 0 5rem;
+  padding: 12px 13px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 20px;
+}
+.grid-social-media {
+  display: grid;
+  grid-template-areas:
+    "instagram instagram telegram kontact"
+    "twiter youtube youtube kontact";
+  gap: 10px;
+}
+.grid-social-media div {
+  padding: 30px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #232933;
+}
+#items-inst {
+  grid-area: instagram;
+}
+#items-tel {
+  grid-area: telegram;
+}
+#items-twit {
+  grid-area: twiter;
+}
+#items-yout {
+  grid-area: youtube;
+}
+#items-kont {
+  grid-area: kontact;
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-betwee5;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.cont h2 {
+  font-size: 1.6rem;
+  margin: 0 10px;
+  text-align: start;
+}
+.cont p {
+  margin: 0 10px;
+  font-size: 1rem;
+  text-align: start;
+}
+.foto-insta {
+  background-image: url(img/instagram-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+}
+.foto-tel {
+  background-image: url(img/telegram-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.foto-yout {
+  background-image: url(img/youtube-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+.foto-twit {
+  background-image: url(img/twitter-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.telegram {
+  width: 300px;
+}
+.telegram h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.twitter {
+  width: 300px;
+}
+.twitter h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+#items-kont {
+  padding: 5px 10px;
+}
+#items-kont .cont {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#items-kont .cont h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+@media only screen and (max-width: 1000px) {
+  .nav {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .titleBanner {
+    width: 100%;
+    margin: 1rem;
+  }
+  .titleBanner p {
+    text-align: start;
+  }
+  .titleBanner h1,
+  h2 {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .foto {
+    margin: 10px auto;
+    border: 1rem solid #297ae3;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+  }
+
+  .grid-social-media {
+    display: grid;
+    grid-template-areas:
+      "instagram instagram "
+      "youtube youtube "
+      "telegram twiter"
+      "kontact kontact ";
+    gap: 10px;
+  }
+  .grid-social-media div {
+    padding: 30px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #232933;
+  }
+  #items-inst {
+    grid-area: instagram;
+  }
+  #items-tel {
+    grid-area: telegram;
+  }
+  #items-twit {
+    grid-area: twiter;
+  }
+  #items-yout {
+    grid-area: youtube;
+  }
+  #items-kont {
+    grid-area: kontact;
+  }
+
+  .display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-betwee5;
+  }
+  .cont {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  .cont h2 {
+    font-size: 1.6rem;
+    margin: 0 10px;
+    text-align: start;
+  }
+  .cont p {
+    margin: 0 10px;
+    font-size: 1rem;
+    text-align: start;
+  }
+  .foto-insta {
+    background-image: url(img/instagram-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+  }
+  .foto-tel {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .foto-yout {
+    background-image: url(img/youtube-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+  }
+  .foto-twit {
+    background-image: url(img/twitter-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .telegram {
+    width: 100%;
+  }
+  .telegram h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .twitter {
+    width: 100%;
+  }
+  .twitter h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  #items-kont {
+    padding: 5px 10px;
+  }
+  #items-kont .cont {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  #items-kont .cont h2 {
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 100%;
+    margin: 0;
+  }
+  .nav a {
+    font-size: 1rem;
+    margin: 0 0.4rem;
+  }
+  .titleBanner {
+    margin: 2rem auto;
+    width: 100%;
+  }
+
+  .titleBanner h1,
+  h2 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .titleBanner p {
+    font-size: 1.2rem;
+    color: white;
+    text-align: start;
+  }
+  .foto {
+    width: 400px;
+    height: 400px;
+  }
+  .aboutme {
+    margin: 0;
+  }
+  .aboutme h1 {
+    text-align: center;
+  }
+  .aboutme p {
+    color: white;
+    font-size: 1rem;
+    text-align: start;
+  }
+  .myFoto {
+    width: 400px;
+    height: 600px;
+    margin: 2rem auto;
+  }
+
+  .items-service {
+    margin-bottom: 2rem;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .title-service {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .items-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #232933;
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    margin: 1rem;
+  }
+  .items-service h2 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+  }
+  .items-service p {
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .items-service button {
+    background: #297ae3;
+    border: none;
+    margin: 0 5rem;
+    padding: 12px 13px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 20px;
+  }
+  footer {
+    margin-top: 15rem;
+  }
+  footer h2 {
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .grid-social-media {
+    display: grid;
+    grid-template-areas:
+      "instagram instagram "
+      "youtube youtube "
+      "telegram telegram"
+      "twiter twiter"
+      "kontact kontact ";
+    gap: 10px;
+  }
+  .grid-social-media div {
+    padding: 30px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #232933;
+  }
+  .cont {
+    width: 70%;
+  }
+  .grid-social-media div {
+    padding: 10px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #232933;
+  }
+  .twitter {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  .twitter h2 {
+    width: 70%;
+  }
+  .telegram {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  .telegram h2 {
+    width: 70%;
+  }
+}
