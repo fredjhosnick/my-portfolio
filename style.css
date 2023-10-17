@@ -153,6 +153,97 @@ section .title-service {
     "twiter youtube youtube kontact";
   gap: 10px;
 }
+.projekt-section {
+  text-align: center;
+  margin: 70px 0;
+  height: 90vh;
+}
+.projekt-section h2 {
+  margin: 30px;
+  font-size: 4rem;
+}
+.grid-pojekten h3 {
+  color: white;
+  font-size: 2rem;
+}
+.foto-kochblog {
+  background-image: url(img/foto-kochblog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid white;
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+}
+.foto-reiseblog {
+  background-image: url(img/foto-reiseblog.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid white;
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+}
+.foto-portfseiteblog {
+  background-image: url(img/foto-portfseite.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid white;
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+}
+.items {
+  text-align: center;
+}
+.items h3 {
+  margin: 5px 0;
+}
+.items a div {
+  margin: 15px 0;
+}
+
+.items .button {
+  background-color: #297ae3;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.grid-pojekten {
+  display: grid;
+  grid-template-areas: "kochen reisen  projektSeite";
+  gap: 10px;
+}
+.grid-projekte div {
+  padding: 30px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #232933;
+}
+
+#item-koch {
+  grid-area: kochen;
+}
+#item-reise {
+  grid-area: reisen;
+}
+#item-portfseite {
+  grid-area: projektSeite;
+}
+
+.grid-social-media {
+  display: grid;
+  grid-template-areas:
+    "instagram instagram telegram kontact"
+    "twiter youtube youtube kontact";
+  gap: 10px;
+}
 .grid-social-media div {
   padding: 30px;
   color: white;
@@ -324,7 +415,7 @@ section .title-service {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-betwee5;
+    justify-content: space-between;
   }
   .cont {
     display: flex;
