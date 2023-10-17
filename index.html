@@ -4,62 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general-style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="aboutme.css" />
+    <link rel="stylesheet" href="service.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="projekt.css" />
   </head>
   <body>
-    <nav class="nav">
-      <div class="navBar">
-        <a href="#aboutme">Über mich</a>
-        <a href="#full-service">Diensleistungen</a>
-        <a href="#projekt-section">Projekte</a>
-        <a href="#items-kont">Mehr Infotmation</a>
-      </div>
-    </nav>
-    <div class="banner">
-      <div class="titleBanner">
-        <h1>Mein Name,</h1>
-        <h2>Fred Rios</h2>
-        <p>
-          Ich bin Web-Entwickler und lerne ich gerne und programmiere gerne.
+    <header>
+      <div class="header-text">
+        <nav>
+          <input type="checkbox" id="toggle_button" />
+          <label for="toggle_button">
+            <span class="material-symbols-rounded"> menu </span>
+          </label>
+          <ul>
+            <li><a href="#aboutme-section">Über mich</a></li>
+            <li><a href="#section">Diensleistungen</a></li>
+            <li><a href="">Mehr Information</a></li>
+          </ul>
+        </nav>
+        <h1>Mein Name,<br /><span class="nameD">Fred Rios</span></h1>
+
+        <p class="sub-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ut ad
+          alias magnam itaque maxime totam vitae, aliquid accusantium quas
+          libero molestias suscipit at officiis voluptates? Sequi error porro
+          pariatur.
         </p>
       </div>
-      <div class="foto"></div>
-    </div>
-
-    <section class="aboutme" id="aboutme">
-      <h1>Über mich</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse commodi
-        eius nemo obcaecati consectetur recusandae sequi, quae veniam at labore?
-        Vel commodi adipisci hic officiis aliquam, sint molestias quas culpa!
-      </p>
-      <div class="myFoto"></div>
+      <div class="foto-header"></div>
+    </header>
+    <section id="aboutme-section">
+      <div class="foto-aboutme"></div>
+      <div class="aboutme-container">
+        <h2>Über mich</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          expedita tempore voluptatem laborum similique natus ex maxime
+          praesentium? Quam voluptatem, laboriosam optio maiores reiciendis vero
+          adipisci alias neque perspiciatis similique! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Explicabo expedita tempore
+          voluptatem laborum similique natus ex maxime praesentium? Quam
+          voluptatem, laboriosam optio maiores reiciendis vero adipisci alias
+          neque perspiciatis similique! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Explicabo expedita tempore voluptatem laborum
+          similique natus ex maxime praesentium? Quam voluptatem, laboriosam
+          optio maiores reiciendis vero adipisci alias neque perspiciatis
+          similique!
+        </p>
+      </div>
     </section>
-
-    <section id="full-service">
-      <h1 class="title-service">Programmiere Sprache</h1>
+    <section class="service-section" id="section">
+      <h2>Diensleistungen</h2>
       <div class="services">
         <div class="items-service">
-          <h2>HTML</h2>
+          <h3>Beratung</h3>
           <p>
-            Ich habe ein gutes Verstädniss und viele Erfharung. Deshalb kann ich
-            komplexe Seite einstellen.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus inventore architecto esse totam? Beatae debitis
+            reiciendis dolorem rerum maxime velit obcaecati sequi maiores eius,
+            aliquam eum ipsum, consequatur architecto enim.
           </p>
           <button>Buchen</button>
         </div>
         <div class="items-service">
-          <h2>CSS</h2>
+          <h3>Beratung</h3>
           <p>
-            Ich habe ein gutes Verstädniss und viele Erfharung. Deshalb kann ich
-            komplexe Design und Animation einstellen.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus inventore architecto esse totam? Beatae debitis
+            reiciendis dolorem rerum maxime velit obcaecati sequi maiores eius,
+            aliquam eum ipsum, consequatur architecto enim.
           </p>
           <button>Buchen</button>
         </div>
         <div class="items-service">
-          <h2>JavaScript</h2>
+          <h3>Beratung</h3>
           <p>
-            Ich habe ein gutes Verstädniss und gute Erfharung. Deshalb kann ich
-            komplexe Design, Animation und dinamische Seite einstellen.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus inventore architecto esse totam? Beatae debitis
+            reiciendis dolorem rerum maxime velit obcaecati sequi maiores eius,
+            aliquam eum ipsum, consequatur architecto enim.
           </p>
           <button>Buchen</button>
         </div>
@@ -110,44 +140,49 @@
         </div>
       </div>
     </section>
-
-    <footer>
-      <h2>Mehr Information</h2>
-      <div class="grid-social-media">
-        <div id="items-inst" class="display">
-          <div class="foto-insta"></div>
-          <div class="cont">
-            <h2>Instagram</h2>
+    <footer class="more-information-section">
+      <h2>Mehr information</h2>
+      <div class="grid-container">
+        <div id="item-telegram" class="grid-item">
+          <div class="foto-telegram"></div>
+          <h3>Telegram</h3>
+        </div>
+        <div id="item-youtube" class="grid-item">
+          <div class="foto-youtube"></div>
+          <div class="cont-item">
+            <h3>Youtube</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
-              ipsum saepe velit, veritatis vitae distinctio doloribus ad,
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              excepturi suscipit vel adipisci repudiandae hic accusantium nihil,
+              rerum placeat. Aliquid harum ullam placeat animi fugiat nulla
+              assumenda deserunt voluptatum perspiciatis?
             </p>
           </div>
         </div>
-        <div id="items-tel" class="telegram">
-          <div class="foto-tel"></div>
-          <h2>Telegram</h2>
+        <div id="item-twitter" class="grid-item">
+          <div class="foto-twitter"></div>
+          <h3>Twitter</h3>
         </div>
-        <div id="items-twit" class="twitter">
-          <div class="foto-twit"></div>
-          <h2>Twiter</h2>
-        </div>
-        <div id="items-yout" class="display">
-          <div class="foto-yout"></div>
-          <div class="cont">
-            <h2>Youtube</h2>
+        <div id="item-instagram" class="grid-item">
+          <div class="foto-instagram"></div>
+          <div class="cont-item">
+            <h3>Instagram</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
-              ipsum saepe velit, veritatis vitae distinctio doloribus ad,
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              numquam voluptates impedit! Consequuntur laborum sit molestias et
+              at praesentium animi, accusamus vitae veritatis amet architecto
+              impedit ex quidem iste tenetur!
             </p>
           </div>
         </div>
-        <div id="items-kont" class="display">
-          <div class="cont">
-            <h2>Kontakt</h2>
+        <div id="item-kontakt" class="grid-item">
+          <div class="cont-contakt">
+            <h3>Kontakt</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
-              ipsum saepe velit, veritatis vitae distinctio doloribus ad,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              atque esse repellendus totam, dolore odio cupiditate
+              necessitatibus qui nam in, est enim quo cumque optio harum facere
+              molestiae magnam numquam.
             </p>
           </div>
         </div>

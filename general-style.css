@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --mein-brand-color: #297ae3;
+  --primary-color: #15171c;
+  --secondary-color: #232933;
+  --light-secondary-color: #2e3744;
+  --text-color: white;
+  --secondary-text-color: #b3acac;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  font-family: "Popins", sans-serif;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 5rem;
+}
+.header-text h1 .nameD {
+  font-size: 100px;
+  line-height: 100%;
+  color: var(--mein-brand-color);
+}
+.sub-text {
+  color: var(--secondary-text-color);
+  margin-top: 1.2rem;
+}
+h3 {
+  font-size: 38px;
+}
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 12vw;
+    text-align: center;
+  }
+  .header-text h1 .nameD {
+    font-size: 12vw;
+    text-align: center;
+  }
+  .sub-text {
+    text-align: center;
+  }
+}

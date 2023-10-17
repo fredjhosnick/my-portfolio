@@ -1,0 +1,110 @@
+footer {
+  padding: 70px 0;
+  background-color: var(--secondary-color);
+}
+footer h2 {
+  font-size: 50px;
+  text-align: center;
+}
+.grid-container {
+  margin: 60px auto;
+  width: 100%;
+  background: gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 15px;
+  grid-template-areas:
+    "insta insta teleg kontakt"
+    "twitt yout yout kontakt";
+}
+.grid-item {
+  background-color: var(--light-secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+.cont-item {
+  width: 60%;
+}
+.foto-telegram {
+  background-image: url(img/telegram-svgrepo-com.svg);
+  background-position: center;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+}
+.foto-instagram {
+  background-image: url(img/instagram-svgrepo-com.svg);
+  background-position: center;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+}
+.foto-youtube {
+  background-image: url(img/youtube-svgrepo-com.svg);
+  background-position: center;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+}
+.foto-twitter {
+  background-image: url(img/twitter-svgrepo-com.svg);
+  background-position: center;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+}
+
+#item-telegram {
+  grid-area: teleg;
+  flex-direction: column;
+  gap: 10px;
+}
+#item-youtube {
+  grid-area: yout;
+}
+#item-twitter {
+  grid-area: twitt;
+  flex-direction: column;
+  gap: 10px;
+}
+#item-instagram {
+  grid-area: insta;
+}
+#item-kontakt {
+  grid-area: kontakt;
+}
+@media only screen and (max-width: 1300px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+      "insta insta teleg"
+      "twitt yout yout "
+      "kontakt kontakt kontakt";
+    margin: 50px auto;
+  }
+  .cont-item {
+    font-size: 2vw;
+    width: calc(60% - 20px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "insta insta"
+      "yout yout "
+      "teleg twitt"
+      "kontakt kontakt ";
+    margin: 80px auto;
+  }
+  .cont-item {
+    font-size: 2vw;
+    width: calc(60% - 20px);
+  }
+}
